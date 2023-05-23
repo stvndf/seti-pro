@@ -1,14 +1,19 @@
-# Seti UI
+# Seti Pro
 
 [![Gitter](https://img.shields.io/gitter/room/jesseweed/seti-ui.svg?style=flat-square)](https://gitter.im/jesseweed/seti-ui)
 [![GitHub](https://img.shields.io/github/license/jesseweed/seti-ui?style=flat-square)](https://github.com/jesseweed/seti-ui/blob/master/LICENSE.md)
 
 
-### Seti-UI Theme, and VS Code icon pack
+### Seti-Pro VS Code icon pack
  
-This repo contains the latest version of the Seti UI theme. It contains the default icons used in [VS Code](https://code.visualstudio.com/).
+This repo is based on [Seti-UI](https://github.com/jesseweed/seti-ui), providing extra enhancements. Includes custom file icons and user configurable settings.
 
-The theme is a dark interface theme crafted originally for [Atom](http://atom.io), with subtle colors that are meant to be easy on the eyes. It includes custom file icons, and new user configurable settings.
+#### What's different?
+Aim is to remain a subtle colour scheme easy on the eye and reducing distraction, while increasing utility
+* More available colours
+* Coloured config & other files
+* Special icons for Next.js
+
 
 ## Adding File Icons
 
@@ -31,17 +36,22 @@ Once everything is setup, follow these steps any time you want to add a new icon
 
   The first parameter `'.scss'` is the file extension you want to target, the second parameter `'sass'` is the name of the icon you just created, without the extension (sass.svg), and the last parameter `@pink` indicated what color the icon should be.
 
-  There are currently 9 supported icon colors:
+  There are currently 14 supported icon colors:
   
     - `@blue`
-    - `@grey`
+    - `@blue-dark`
+    - `@blue-light`
     - `@green`
+    - `@grey`
+    - `@grey-dark`
+    - `@grey-light`
     - `@orange`
     - `@pink`
     - `@purple`
     - `@red`
     - `@white`
     - `@yellow`
+    - `@yellow-dark`
 
   While, you _can_ add additional colors to [styles/ui-variables.less](styles/ui-variables.less), but please do not do this unless you find it _absolutely_ necessary. If you do add another color, please make sure that matches the general feel of the other colors. If you add something really bright or really pale, your pull request will likely be declined.
 
